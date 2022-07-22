@@ -1,5 +1,5 @@
 .NewCollection-main-cont{
-    height: 700px;
+    /* height: 700px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@ transform: scale(1.1);
 
 }
 .NewCollection-product-name{
-    font-family: 'Inter';
+    font-family: 'Inter' !important;
 font-style: normal;
 font-weight: 600;
 font-size: 24px;
@@ -70,7 +70,7 @@ font-weight: 500;
 font-size: 18px;
 line-height: 17px;
 /* identical to box height */
-
+margin-top: 5px;
 letter-spacing: -0.02em;
 
 color: rgba(0, 0, 0, 0.6);

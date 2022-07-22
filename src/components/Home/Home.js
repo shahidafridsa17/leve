@@ -2,8 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "./BannerSection/Slider";
 import BestSeller from "./BestSeller/BestSeller";
+import GetInTouch from "./GetInTouch/GetInTouch";
 import Header from "./Header/Header";
 import NewCollection from "./NewCollection/NewCollection";
+import OurStore from "./OurStore/OurStore";
+import Customization from "./PerfumeCustomization/Customization";
+import PremiumAd from "./PremiumAd/PremiumAd";
 
 const images = [
   "../../../logo.svg",
@@ -15,12 +19,15 @@ function Home() {
     <div>
       <Header />
       <div>{/* <Slider slides={images} /> */}</div>
+
+      <BestSeller />
+      <NewCollection />
+      <PremiumAd />
       <div>
-        <BestSeller />
+        <OurStore />
       </div>
-      <div>
-        <NewCollection />
-      </div>
+      <Customization />
+      <GetInTouch />
     </div>
   );
 }

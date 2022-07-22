@@ -1,6 +1,7 @@
 import React from "react";
 import "./BestSeller.css";
 import pr1 from "../../../pr1.jpg";
+import pr4 from "../../../pr4.jpg";
 
 function BestSeller() {
   return (
@@ -18,10 +19,12 @@ function BestSeller() {
           <h4 className="BestSeller-product-name">Dareej</h4>
         </div>
         <div className="BestSeller-product-cont">
-          <img className="BestSeller-product-img" src={pr1} alt="" />
+          <img className="BestSeller-product-img" src={pr4} alt="" />
+          <h4 className="BestSeller-product-name">Dareej</h4>
         </div>
         <div className="BestSeller-product-cont">
           <img className="BestSeller-product-img" src={pr1} alt="" />
+          <h4 className="BestSeller-product-name">Dareej</h4>
         </div>
       </div>
     </div>

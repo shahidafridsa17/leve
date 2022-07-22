@@ -1,6 +1,8 @@
 import React from "react";
 import "./NewCollection.css";
 import pr1 from "../../../gul.JPG";
+import pr2 from "../../../pr2.jpg";
+import pr3 from "../../../pr3.jpg";
 
 function NewCollection() {
   return (
@@ -26,12 +28,12 @@ function NewCollection() {
           <div className="NewCollection-product-img-cont">
             <img
               className="NewCollection-product-img"
-              src={pr1}
+              src={pr3}
               alt="product"
             />
           </div>
           <div className="NewCollection-product-detail-cont">
-            <h3 className="NewCollection-product-name">Dareej</h3>
+            <h3 className="NewCollection-product-name">SHAAZI</h3>
             <p className="NewCollection-product-price">$20</p>
           </div>
         </div>
@@ -52,7 +54,7 @@ function NewCollection() {
           <div className="NewCollection-product-img-cont">
             <img
               className="NewCollection-product-img"
-              src={pr1}
+              src={pr2}
               alt="product"
             />
           </div>

@@ -39,7 +39,14 @@ cursor: pointer;
     
     
 }
-
+.header-sociallinks-main-cont{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.socialmedia-icons:hover{
+    cursor: pointer;
+}
 @media only screen and (max-width: 600px) {
     .header-main-container{
         height:70px;
