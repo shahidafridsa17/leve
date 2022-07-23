@@ -27,6 +27,8 @@
 }
 .header-navlinks-options{
 cursor: pointer;
+text-decoration: none;
+color: black;
 }
 .header-navlinks-options:hover{
     color: #DFA676;

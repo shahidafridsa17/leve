@@ -14,9 +14,13 @@ export default function Header() {
       </div>
       <div className="header-navlinks-main-cont">
         <span className="header-navlinks-options">Home</span>
-        <span className="header-navlinks-options">Perfumes</span>
+        <a href="#perfumes" className="header-navlinks-options">
+          Perfumes
+        </a>
         <span className="header-navlinks-options">Blog</span>
-        <span className="header-navlinks-options">Contact</span>
+        <a href="#contact-us" className="header-navlinks-options">
+          Contact
+        </a>
         <span className="header-navlinks-options">About us</span>
       </div>
       <div className="header-sociallinks-main-cont">

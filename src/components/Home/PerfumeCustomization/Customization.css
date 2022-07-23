@@ -50,11 +50,11 @@ color: #FFFFFF;
 }
 .customization-image-cont{
     flex: .40;
-    background-color: red;
     height: 45vh;
     
     
     background-image: url('../../../customization.png');
+
     background-repeat: no-repeat;
     background-size:cover;
 

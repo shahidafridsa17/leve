@@ -21,6 +21,7 @@
 .PremiumAd-right-container{
     flex:1;
     background-image: url('../../../premium-bg.jpg');
+
     background-repeat: no-repeat;
     background-size: cover;
     border-top-right-radius: 50px;
