@@ -6,22 +6,45 @@ import { FiInstagram } from "react-icons/fi";
 import { BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 
-export default function Header() {
+export default function Header({ navlinks }) {
   return (
     <div className="header-main-container">
       <div className="header-logo-main-cont">
         <img className="header-logo" src={logo} alt="logo" />
       </div>
       <div className="header-navlinks-main-cont">
-        <span className="header-navlinks-options">Home</span>
-        <a href="#perfumes" className="header-navlinks-options">
+        <span
+          style={navlinks ? { display: "inline" } : { display: "none" }}
+          className="header-navlinks-options"
+        >
+          Home
+        </span>
+        <a
+          style={navlinks ? { display: "inline" } : { display: "none" }}
+          href="#perfumes"
+          className="header-navlinks-options"
+        >
           Perfumes
         </a>
-        <span className="header-navlinks-options">Blog</span>
-        <a href="#contact-us" className="header-navlinks-options">
+        <span
+          style={navlinks ? { display: "inline" } : { display: "none" }}
+          className="header-navlinks-options"
+        >
+          Blog
+        </span>
+        <a
+          style={navlinks ? { display: "inline" } : { display: "none" }}
+          href="#contact-us"
+          className="header-navlinks-options"
+        >
           Contact
         </a>
-        <span className="header-navlinks-options">About us</span>
+        <span
+          style={navlinks ? { display: "inline" } : { display: "none" }}
+          className="header-navlinks-options"
+        >
+          About us
+        </span>
       </div>
       <div className="header-sociallinks-main-cont">
         <FiInstagram

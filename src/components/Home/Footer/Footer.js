@@ -5,9 +5,9 @@ import { FiInstagram } from "react-icons/fi";
 import { BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 
-function Footer() {
+function Footer({ visible }) {
   return (
-    <div className="footer-main-cont">
+    <div style={visible ? {} : { height: "30vh" }} className="footer-main-cont">
       <div className="footer-logoLinks-cont">
         <div className="footer-logo-cont">
           <img src={textLogo} alt="textLogo" className="footer-logo-img-tag" />
@@ -15,7 +15,10 @@ function Footer() {
             Lorem ipsum dolor sit amet, consectetuipisicing elit,
           </p>
         </div>
-        <div className="footer-link-cont">
+        <div
+          style={visible ? { display: "flex" } : { display: "none" }}
+          className="footer-link-cont"
+        >
           <a href="#perfumes" className="footer-link-tag">
             Perfumes
           </a>

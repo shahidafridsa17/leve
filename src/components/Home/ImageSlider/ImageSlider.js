@@ -1,6 +1,6 @@
-import Banner1 from "../../../banner1.svg";
-import Banner2 from "../../../banner2.svg";
-import Banner3 from "../../../banner3.svg";
+import Banner1 from "../../../banner1.1.png";
+import Banner2 from "../../../banner2.png";
+import Banner3 from "../../../banner3.png";
 
 export default [
   {

@@ -17,21 +17,30 @@ function GetInTouch() {
     }
     return "desktop";
   };
+  function ValidateEmail(mail) {
+    if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      return true;
+    }
+    alert("You have entered an invalid email address!");
+    return false;
+  }
   const onSubmit = () => {
-    console.log(email);
     let number = 918590302028;
-    let message = "hiii";
+    let isValid = ValidateEmail(email);
+    let message = `Hi Leve Fragrance, I would like to subscribe your service using email ${email}`;
     let url;
     const device = deviceType();
-    if (device === "desktop") {
-      url = `https://web.whatsapp.com/send?phone=${number}`;
+    if (isValid) {
+      if (device === "desktop") {
+        url = `https://web.whatsapp.com/send?phone=${number}`;
 
-      url += `&text=${encodeURI(message)}&app_absent=0`;
-    } else {
-      url = `whatsapp://send?phone=${number}`;
-      url += `&text=${encodeURI(message)}&app_absent=0`;
+        url += `&text=${encodeURI(message)}&app_absent=0`;
+      } else {
+        url = `whatsapp://send?phone=${number}`;
+        url += `&text=${encodeURI(message)}&app_absent=0`;
+      }
+      window.open(url);
     }
-    window.open(url);
   };
 
   return (
@@ -46,7 +55,7 @@ function GetInTouch() {
       <div className="GetInTouch-input-cont">
         <input
           onChange={(e) => setEmail(e.target.value)}
-          type="text"
+          type="email"
           className="GetInTouch-input-tag"
           placeholder="Your email address..."
         />

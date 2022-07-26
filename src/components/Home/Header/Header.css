@@ -3,7 +3,7 @@
     width: 100vw;
     background-color:#F0E8E1;
     display: flex;
-
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .header-logo{
     left: 56px; top: 5; width: 60% ;
@@ -73,5 +73,11 @@ color: black;
         align-items: center;
         margin-right: 15px;
         
+    }
+  }
+
+  @media only screen and (max-width: 968px) {
+    .header-navlinks-main-cont{
+        padding: 0;
     }
   }
