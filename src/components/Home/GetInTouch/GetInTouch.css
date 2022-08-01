@@ -1,0 +1,105 @@
+.GetInTouch-main-cont{
+    margin: 6%;
+    height:60vh;
+    border-radius: 80px;
+    background-image: url('../../../getInTouch.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.GetInTouch-header-tag{
+    font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 58px;
+/* identical to box height */
+
+letter-spacing: -0.04em;
+
+color: #000000;
+
+}
+.GetInTouch-p-tag{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+text-align: center;
+
+color: rgba(0, 0, 0, 0.6);
+margin-top: 10px;
+}
+.GetInTouch-text-cont{
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4%;
+
+}
+
+.GetInTouch-input-cont{
+background: #FFFFFF;
+border-radius: 24px;
+display: flex;
+align-items: center;
+padding: 1% 2%;
+}
+.GetInTouch-subscribe-button{
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #000000;
+border-radius: 16px;
+}
+.GetInTouch-input-tag:active{
+    border: none;
+}
+
+.GetInTouch-input-tag{
+    border: none;
+    height:50px;
+    font-size: 18px;
+    outline: none;
+    padding: 0 4%;
+}
+
+@media only screen and (max-width: 600px) {
+    .GetInTouch-input-tag{
+        width:180px;
+        font-size: 14px;
+        height:40px;
+
+
+    }
+    .GetInTouch-subscribe-button{
+        width: 75px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .GetInTouch-header-tag{
+        font-size: 25px;
+        font-weight: bold;
+    }
+.GetInTouch-main-cont{
+    height:50vh;
+    background-image: url('../../../getInTouchmobile.jpg');
+    min-height: 402px;
+    margin-top: 16%;
+    border-radius: 50px;
+
+}
+.GetInTouch-p-tag{
+    line-height:20px;
+}
+}

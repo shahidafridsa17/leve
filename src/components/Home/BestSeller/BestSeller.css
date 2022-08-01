@@ -1,0 +1,118 @@
+.BestSeller-main-cont {
+    min-height: 300px;
+    width: 100vw;
+    display: flex;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.BestSeller-header-cont {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 430px;
+    min-height: 80px;
+    padding: 5% 0;
+    background-color: #fff;
+
+
+
+}
+
+.BestSeller-header-tag {
+    font-family: 'Constantia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 99.07%;
+    /* or 56px */
+
+    letter-spacing: -0.01em;
+
+    color: rgba(11, 21, 33, 0.82);
+}
+
+.BestSeller-para-tag {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 99.07%;
+    /* or 26px */
+    margin-top: 10px;
+    letter-spacing: -0.01em;
+
+    color: rgba(0, 0, 0, 0.49);
+
+}
+
+.BestSeller-product-main-cont {
+    flex: 2.5;
+    /* background-color:red; */
+    display: flex;
+    flex-direction: row;
+    /* min-width: 735px; */
+    background-color: #fff;
+
+}
+
+.BestSeller-product-cont {
+    flex: 1;
+    border: 1px solid #E9D6C7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 260px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.BestSeller-product-name {
+    font-family: 'Poppins' !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 99.07%;
+    margin-bottom: 15px;
+    /* or 20px */
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    color: #000000;
+}
+
+.BestSeller-product-img {
+    width: 12vw;
+    min-width: 100px;
+    height: 171px;
+}
+
+@media only screen and (max-width: 600px) {
+    .BestSeller-product-img {
+        width: 50px;
+        height: 100px;
+    }
+
+    .BestSeller-header-tag {
+        font-size: 30px;
+    }
+
+    .BestSeller-para-tag {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .BestSeller-header-cont {
+        min-width: 100vw;
+    }
+
+    .BestSeller-product-cont {
+        min-width: 10px;
+    }
+
+    .BestSeller-product-name {
+        font-size: 14px;
+    }
+}
